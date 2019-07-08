@@ -1,7 +1,7 @@
 {
   "name": "Trillo",
   "version": "1.0.0",
-  "description": "This is the Trillo webapp homepage",
+  "description": "This is the Trillo web app homepage",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
