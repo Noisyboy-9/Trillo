@@ -1,19 +1,38 @@
 .mini-panel {
-  &--icon-box {}
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-grey-light-3;
+  }
 
   &__icon {
-    height: 3.5rem;
-    width: 3.5rem;
+    width: 4rem;
+    height: 4rem;
+    fill: $color-grey-dark-2;
   }
 
-  &__circle-notification {}
-
-  &__profile-box {}
+  &__circle-notification {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: .25rem;
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+  }
 
   &__profile-picture {
-    height: 3.5rem;
+    height: 4rem;
     border-radius: 50%;
+    margin-right: .5rem;
   }
 
-  &__username {}
+  &__username {
+    font-size: 1.1rem;
+  }
 }

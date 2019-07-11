@@ -17,10 +17,14 @@ body {
   line-height: 1.6;
   min-height: 100vh;
 
-  // doing the background color 
+  // doing the background color and the color 
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
   background-size: cover;
   background-repeat: no-repeat;
-
   color: $color-grey-dark-2;
+
+  // centering box inside
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

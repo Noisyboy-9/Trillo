@@ -1,0 +1,14 @@
+.box {
+  background-color: $color-grey-light-1;
+  min-height: 50rem;
+  box-shadow: $dark-box-shadow;
+  flex: 0 1 120rem;
+}
+
+.content {
+  display: flex;
+}
+
+.hotel-view {
+  flex: 1 1 80%;
+}
