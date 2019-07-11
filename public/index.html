@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="main.min.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <title>trillo &mdash;
-    Your all-in-one bookingapp</title>
+    Your all-in-one booking app</title>
 </head>
 
 <body>
@@ -52,11 +52,64 @@
 
       </div>
     </header>
+
     <div class="content">
-      <aside class="side-bar">ASIDE BAR </aside>
+      <aside class="side-bar">
+        <nav class="side-bar__nav">
+          <ul class="side-bar__list">
+
+            <li class="side-bar__item side-bar__item--active">
+              <a href="#" class="side-bar__link">
+                <svg class="side-bar__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                Hotels
+              </a>
+            </li>
+
+            <li class="side-bar__item">
+              <a href="#" class="side-bar__link">
+                <svg class="side-bar__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                Flights
+              </a>
+            </li>
+
+            <li class="side-bar__item">
+              <a href="#" class="side-bar__link">
+                <svg class="side-bar__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                Car Renting
+              </a>
+            </li>
+
+            <li class="side-bar__item">
+              <a href="#" class="side-bar__link">
+                <svg class="side-bar__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                Tours
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="side-bar__copy-box">
+          <p>
+            &copy;This website was coded by <a href="https://github.com/noisyBoy-9"
+              class="side-bar__copy-link">NoisyBoy</a>
+            and all rights are reserved
+          </p>
+        </div>
+      </aside>
       <main class="hotel-view">HOTEL VIEW </main>
     </div>
   </section>
+
+  <script src="bundle.js"></script>
 </body>
 
 </html>

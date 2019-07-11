@@ -1,4 +1,86 @@
 .side-bar {
   flex: 0 1 20%;
   background-color: $color-grey-dark-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__list {
+    list-style: none;
+    margin-top: 2rem;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    position: relative;
+    display: block;
+    z-index: 10;
+
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
+
+    &::before {
+      content: '';
+      height: 100%;
+      background-color: $color-primary;
+      width: .3rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleY(0);
+      transition: transform 0.2s,
+        width .4s cubic-bezier(1, 0, 0, 1) .2s;
+    }
+
+    &:hover::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+
+    &--active::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+
+  }
+
+  /* taking care of the hover animation */
+
+  &__link {
+    text-decoration: none;
+    color: $color-grey-light-1;
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: $color-white;
+    margin-right: 1.5rem;
+  }
+
+  &__copy-box {
+    font-size: 1.2rem;
+    color: currentColor;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 600;
+  }
+
+  &__copy-link {
+    color: lighten($color-grey-light-4, 10);
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: al .2s;
+
+
+    &:hover {
+      color: darken($color-grey-light-4, 10);
+    }
+  }
 }

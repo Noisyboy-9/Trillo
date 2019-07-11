@@ -28,3 +28,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+a,
+a:active,
+a:focus {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}

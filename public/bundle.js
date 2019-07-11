@@ -91,9 +91,10 @@
   !*** ./src/js/main.js ***!
   \************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/js/main.js?");
+"use strict";
+eval(" // click active state on aside-bar items\n\nvar sideBarItems = document.querySelectorAll('.side-bar__item');\nvar activeItem = sideBarItems.forEach(function (item) {\n  item.addEventListener('click', function () {\n    // removing the class from past active element\n    document.querySelector('.side-bar__item--active').classList.remove('side-bar__item--active'); // adding active class to the clicked element\n\n    item.classList.add('side-bar__item--active');\n  });\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ })
 
