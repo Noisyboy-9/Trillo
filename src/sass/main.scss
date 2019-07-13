@@ -4,6 +4,7 @@
 @import 'base/base';
 @import 'base/typography';
 @import 'base/utilities';
+@import 'base/animations';
 
 @import 'layout/layout';
 @import 'layout/header';
@@ -11,5 +12,8 @@
 
 @import 'components/search';
 @import 'components/minipanel';
+@import 'components/overview';
+@import 'components/gallery';
+@import 'components/button';
 
 @import 'pages/home';

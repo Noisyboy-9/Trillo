@@ -1,0 +1,16 @@
+.btn--inline {
+  font-size: inherit;
+  color: $color-primary;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 3px;
+
+  &:hover {
+    color: $color-grey-dark-1;
+  }
+
+  &:focus {
+    border-bottom: 2px solid currentColor;
+    /* overwriting the reset in the base file */
+    animation: pulse 1s infinite;
+  }
+}

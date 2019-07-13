@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="main.min.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <title>trillo &mdash;
@@ -105,7 +104,53 @@
           </p>
         </div>
       </aside>
-      <main class="hotel-view">HOTEL VIEW </main>
+
+      <main class="hotel-view">
+        <div class="gallery">
+          <figure>
+            <img src="img/hotel-1.jpg" alt="hotel 1" class="gallery__image">
+          </figure>
+          <figure>
+            <img src="img/hotel-2.jpg" alt="hotel 2" class="gallery__image">
+          </figure>
+          <figure>
+            <img src="img/hotel-3.jpg" alt="hotel 3" class="gallery__image">
+          </figure>
+        </div>
+        <div class="overview">
+          <h1 class="overview__heading">Hotel Las Palmas</h1>
+
+          <div class="overview__rate">
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+
+          <div class="overview__location">
+            <svg class="overview__icon-location">
+              <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+            </svg>
+            <a href="#" role="button" class="btn--inline">Iran, Kurdistan, Sanandaj</a>
+          </div>
+
+          <div class="overview__statics">
+            <p class="overview__score">9.9</p>
+            <p class="overview__number">999 votes</p>
+          </div>
+        </div>
+      </main>
     </div>
   </section>
 
