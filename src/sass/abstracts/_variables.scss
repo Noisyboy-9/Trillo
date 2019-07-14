@@ -16,3 +16,7 @@ $color-white : #fff;
 $color-black : #000;
 // box shadow 
 $dark-box-shadow : 0rem 2rem 6rem rgba($color-black, .3);
+$light-box-shadow : 0rem 2rem 5rem rgba($color-black, .06);
+
+// border
+$subtle-border-bottom : 1px solid $color-grey-light-2;
