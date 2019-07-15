@@ -1,4 +1,6 @@
 .testimonial {
   flex: 1;
-  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

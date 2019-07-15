@@ -5,6 +5,7 @@
   background-color: $color-white;
   padding: 3rem;
   font-size: 1.4rem;
+  align-self: flex-start;
 
   &__paragraph {
     &:not(:last-of-type) {
