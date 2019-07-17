@@ -3,14 +3,27 @@
   box-shadow: $dark-box-shadow;
   max-width: 120rem;
   margin: 8rem auto;
+
+  @include response(81.25em) {
+    margin: 5rem auto;
+  }
+
+  @include response(75em) {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .content {
   display: flex;
+
+  @include response(56.25em) {
+    flex-direction: column;
+  }
 }
 
 .hotel-view {
   flex: 1 1 80%;
 }
-
-

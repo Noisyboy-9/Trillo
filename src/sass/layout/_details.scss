@@ -2,4 +2,12 @@
   display: flex;
   padding: 4.5rem;
   border-bottom: $subtle-border-bottom;
+
+  @include response(62.5em) {
+    padding: 3.5rem;
+  }
+
+  @include response(37.5rem) {
+    flex-direction: column;
+  }
 }
